@@ -9,5 +9,7 @@ jobs:
   Hello:
     runs-on: ubuntu-18.04
     steps:
+      - name: "Check out source code"
+        uses: actions/checkout@v2
       - name: Say hello
         run: make hello
