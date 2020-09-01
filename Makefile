@@ -13,6 +13,10 @@ vendor: go.mod go.sum
 unittest: vendor
 	go test -short $(TEST_OPTS) ./...
 
+.PHONY: test
+test: vendor
+	GO111MODULE=on go test -p 1 $(TEST_OPTS) ./...
+
 .PHONY: mysql-up
 mysql-up:
 	@docker-compose up -d mysql

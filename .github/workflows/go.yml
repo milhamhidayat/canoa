@@ -8,8 +8,21 @@ on:
 jobs:
   Hello:
     runs-on: ubuntu-18.04
+    services:
+        mysql:
+          image:mysql:5.7
+        env:
+          MYSQL_DATABASE=soccer
+          MYSQL_USER=soccer
+          MYSQL_PASSWORD=soccer-pass
+          MYSQL_ROOT_PASSWORD=root-pass
+        ports:
+          - 3306:3306
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
     steps:
       - name: "Check out source code"
         uses: actions/checkout@v2
-      - name: Say hello
-        run: make hello
+      - name: Download dependency
+        run: make vendor
+      - name: Run all test
+        run: make test
