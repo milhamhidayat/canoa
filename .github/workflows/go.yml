@@ -1,4 +1,4 @@
-name: Go
+name: soccer-api
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  Hello:
+  soccer-api-go:
     runs-on: ubuntu-18.04
     services:
       mysql:
