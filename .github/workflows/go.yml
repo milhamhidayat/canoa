@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-18.04
     services:
         mysql:
-          image:mysql:5.7
+          image: mysql:5.7
         env:
           MYSQL_DATABASE=soccer
           MYSQL_USER=soccer
