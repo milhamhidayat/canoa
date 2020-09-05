@@ -1,4 +1,4 @@
-name: soccer-api
+name: soccer-api-master
 
 on:
   push:
