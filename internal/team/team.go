@@ -14,3 +14,5 @@ type Team interface {
 }
 
 type TeamService interface{}
+
+type TeamRepo interface{}
