@@ -12,3 +12,7 @@ type Team interface {
 	Get(ctx context.Context, ID int64) (entity.Team, error)
 	Insert(ctx context.Context, t entity.Team) (entity.Team, error)
 }
+
+type TeamService interface{}
+
+type TeamRepo interface{}
