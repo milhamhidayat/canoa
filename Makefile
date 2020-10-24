@@ -11,11 +11,11 @@ vendor: go.mod go.sum
 
 .PHONY: unittest
 unittest: vendor
-	go test -short $(TEST_OPTS) ./...
+	go test -short $(TEST_OPTS) ./... -race
 
 .PHONY: test
 test: vendor
-	GO111MODULE=on go test -p 1 $(TEST_OPTS) ./...
+	GO111MODULE=on go test -p 1 $(TEST_OPTS) ./... -race
 
 .PHONY: mysql-up
 mysql-up:
