@@ -2,7 +2,7 @@
 
 [![GitHub go.mod Go version of a Go module](https://img.shields.io/badge/Go-v1.15-green)](https://github.com/milhamhidayat/canoa/blob/main/go.mod)
 [![Go Report Card](https://goreportcard.com/badge/github.com/milhamhidayat/canoa)](https://goreportcard.com/report/github.com/milhamhidayat/canoa)
-[![Canoa Actions Status](https://github.com/milhamhidayat/canoa/workflows/test/badge.svg)](https://github.com/milhamhidayat/canoa/actions)
+[![Canoa Actions Status](https://github.com/milhamhidayat/canoa/workflows/test/badge.svg)](https://github.com/milhamhidayat/canoa/actions?query=workflow%3Atest)
 
 Sample of simple api.
 
