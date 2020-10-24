@@ -1,0 +1,14 @@
+name: Linter
+
+on: [push, pull_request]
+
+jobs:
+  Golint:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Fetch Repository
+        uses: actions/checkout@v2
+      - name: "Lint Go Code"
+        uses: golangci/golangci-lint-action@v1
+        with:
+            version: v1.30
