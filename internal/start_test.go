@@ -37,6 +37,7 @@ func TestIndexRoute(t *testing.T) {
 			}
 
 			body, err := ioutil.ReadAll(res.Body)
+			require.NoError(t, err)
 			require.Equal(t, test.expectedCode, res.StatusCode)
 			require.Equalf(t, test.expectedBody, string(body), "test index route")
 		})
