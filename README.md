@@ -1,5 +1,7 @@
 # canoa
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/milhamhidayat/canoa)](https://goreportcard.com/report/github.com/milhamhidayat/canoa)
+
 Sample of simple api.
 
 - Experimenting with github action
