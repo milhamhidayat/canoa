@@ -40,7 +40,3 @@ migrate-down:
 migrate-drop:
 	@migrate -database "mysql://$(MYSQL_USER):$(MYSQL_PASSWORD)@tcp($(MYSQL_ADDRESS))/$(MYSQL_DATABASE)" \
 	-path=db/migrations drop
-
-.PHONY: hello
-hello:
-	@echo "hello"

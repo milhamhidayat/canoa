@@ -26,7 +26,7 @@ jobs:
       - name: "Set up Go 1.15"
         uses: actions/setup-go@v2
         with:
-          go-version: ${{matrix.go-version}}
+          go-version: ${{ matrix.go-version }}
       - name: "Check out source code"
         uses: actions/checkout@v2
       - name: Download dependency
