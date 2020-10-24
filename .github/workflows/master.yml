@@ -3,14 +3,14 @@ name: canoa
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   soccer-api-go:
     runs-on: ubuntu-18.04
     strategy:
         matrix:
-          go-version: [1.15.x]
+          go: [ '1.14', '1.15' ]
     services:
       mysql:
         image: mysql:5.7
@@ -23,10 +23,10 @@ jobs:
             - 3306:3306
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
     steps:
-      - name: "Set up Go 1.15"
+      - name: "Set up Go"
         uses: actions/setup-go@v2
         with:
-          go-version: ${{ matrix.go-version }}
+          go-version: ${{ matrix.go }}
       - name: "Check out source code"
         uses: actions/checkout@v2
       - name: Download dependency
