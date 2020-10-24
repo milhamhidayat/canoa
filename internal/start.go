@@ -3,7 +3,7 @@ package internal
 import (
 	"net/http"
 
-	"github.com/gofiber/fiber"
+	"github.com/gofiber/fiber/v2"
 
 	_teamHandler "soccer-api/internal/team/delivery"
 )
@@ -12,8 +12,8 @@ import (
 func Setup() *fiber.App {
 	app := fiber.New()
 
-	app.Get("/", func(c *fiber.Ctx) {
-		c.Status(http.StatusOK).Send("ok")
+	app.Get("/", func(c *fiber.Ctx) error {
+		return c.Status(http.StatusOK).SendString("ok")
 	})
 
 	_teamHandler.New(app, nil)

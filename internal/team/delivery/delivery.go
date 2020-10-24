@@ -3,7 +3,7 @@ package delivery
 import (
 	"soccer-api/internal/team"
 
-	"github.com/gofiber/fiber"
+	"github.com/gofiber/fiber/v2"
 )
 
 type teamHandler struct {
@@ -19,14 +19,14 @@ func New(f *fiber.App, svc team.Team) {
 	f.Post("/teams", h.Insert)
 }
 
-func (h teamHandler) Fetch(c *fiber.Ctx) {
-	c.JSON("fetch")
+func (h teamHandler) Fetch(c *fiber.Ctx) error {
+	return c.JSON("fetch")
 }
 
-func (h teamHandler) Get(c *fiber.Ctx) {
-	c.JSON("get")
+func (h teamHandler) Get(c *fiber.Ctx) error {
+	return c.JSON("get")
 }
 
-func (h teamHandler) Insert(c *fiber.Ctx) {
-	c.JSON("insert")
+func (h teamHandler) Insert(c *fiber.Ctx) error {
+	return c.JSON("insert")
 }

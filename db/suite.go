@@ -33,6 +33,9 @@ func (s *Suite) SetupSuite() {
 
 // TearDownSuite will close db connection
 func (s *Suite) TearDownSuite() {
-	s.Migration.Migrate.Drop()
-	s.DBConn.Close()
+	err := s.Migration.Migrate.Drop()
+	require.NoError(s.T(), err)
+
+	err = s.DBConn.Close()
+	require.NoError(s.T(), err)
 }
