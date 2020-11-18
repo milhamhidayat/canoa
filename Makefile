@@ -40,3 +40,8 @@ migrate-down:
 migrate-drop:
 	@migrate -database "mysql://$(MYSQL_USER):$(MYSQL_PASSWORD)@tcp($(MYSQL_ADDRESS))/$(MYSQL_DATABASE)" \
 	-path=db/migrations drop
+
+# Generate Mock
+.PHONY: team
+team:
+	@mockgen -source=internal/team/team.go -destination=internal/team/mocks/team.go Team

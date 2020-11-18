@@ -19,11 +19,11 @@ type Suite struct {
 func (s *Suite) SetupSuite() {
 	dsn := "soccer:soccer-pass@tcp(localhost:3306)/soccer?parseTime=1&loc=Asia%2FJakarta&charset=utf8mb4&collation=utf8mb4_unicode_ci"
 	migrationsFolder := "migrations"
-	var err error
 
-	s.DBConn, err = sql.Open("mysql", dsn)
+	dbConn, err := sql.Open("mysql", dsn)
 	require.NoError(s.T(), err)
 
+	s.DBConn = dbConn
 	err = s.DBConn.Ping()
 	require.NoError(s.T(), err)
 
