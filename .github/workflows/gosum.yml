@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - ".github/workflows/gosum.yaml"
+      - ".github/workflows/gosum.yml"
       - "go.mod"
       - "go.sum"
 
