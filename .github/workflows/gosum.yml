@@ -1,4 +1,4 @@
-name: "Gosum"
+name: "go sum"
 
 on:
   push:
@@ -29,7 +29,7 @@ jobs:
         uses: peter-evans/create-pull-request@v3.5.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: ":hammer: Tidy up the Go modules"
+          commit-message: "chore: tidy up the Go modules"
           title: "Tidy up the Go module"
           body: |
             Current `go.mod` and `go.sum` don't match the source code.
