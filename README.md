@@ -10,3 +10,4 @@ Sample of simple api.
 - Run pr on every branch, try to master from pr1 branch
 - Push to feat-1 branch
 - Try create pr to main branch
+- Please check PR for dependabot
