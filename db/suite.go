@@ -17,7 +17,7 @@ type Suite struct {
 
 // SetupSuite will initialize test suite
 func (s *Suite) SetupSuite() {
-	dsn := "soccer:soccer-pass@tcp(mysql:3306)/soccer?parseTime=1&loc=Asia%2FJakarta&charset=utf8mb4&collation=utf8mb4_unicode_ci"
+	dsn := "soccer:soccer-pass@tcp(localhost:3306)/soccer?parseTime=1&loc=Asia%2FJakarta&charset=utf8mb4&collation=utf8mb4_unicode_ci"
 	migrationsFolder := "migrations"
 
 	dbConn, err := sql.Open("mysql", dsn)
