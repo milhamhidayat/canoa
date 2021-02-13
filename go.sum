@@ -181,6 +181,7 @@ github.com/huandu/go-sqlbuilder v1.9.0 h1:1jYMio//JYziN8tl95v5e9KaHaoNqJV3cSrhfe
 github.com/huandu/go-sqlbuilder v1.9.0/go.mod h1:cM38aLPrMXaGxsUkHFh1e2skthPnQRPK7h8//X5LQMc=
 github.com/huandu/go-sqlbuilder v1.10.0 h1:6j0CJugdd+7IeU3dPSE0Tr0leMmHdnVUJhM1tr7pZNY=
 github.com/huandu/go-sqlbuilder v1.10.0/go.mod h1:cM38aLPrMXaGxsUkHFh1e2skthPnQRPK7h8//X5LQMc=
+github.com/huandu/go-sqlbuilder v1.11.0/go.mod h1:cM38aLPrMXaGxsUkHFh1e2skthPnQRPK7h8//X5LQMc=
 github.com/ianlancetaylor/demangle v0.0.0-20181102032728-5e5cf60278f6/go.mod h1:aSSvb/t6k1mPoxDqO4vJh6VOCGPwU4O0C2/Eqndh1Sc=
 github.com/jackc/chunkreader v1.0.0/go.mod h1:RT6O25fNZIuasFJRyZ4R/Y2BbhasbmZXF9QQ7T3kePo=
 github.com/jackc/chunkreader/v2 v2.0.0/go.mod h1:odVSm741yZoC3dpHEUXIqA9tQRhFrgOHwnPIn9lDKlk=
