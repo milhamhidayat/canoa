@@ -4,7 +4,7 @@ go 1.15
 
 require (
 	github.com/go-sql-driver/mysql v1.5.0
-	github.com/gofiber/fiber/v2 v2.3.3
+	github.com/gofiber/fiber/v2 v2.15.0
 	github.com/golang-migrate/migrate/v4 v4.14.1
 	github.com/golang/mock v1.4.4
 	github.com/huandu/go-sqlbuilder v1.10.0
